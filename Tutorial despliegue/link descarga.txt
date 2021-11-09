@@ -1,0 +1,7 @@
+intslacion laptop de bb luz 
+03/09/2021 
+https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.9-windows-hosting-bundle-installer
+
+(dir (Get-Command dotnet).Path.Replace('dotnet.exe', 'sdk')).Name
+
+https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.7-windows-hosting-bundle-installer

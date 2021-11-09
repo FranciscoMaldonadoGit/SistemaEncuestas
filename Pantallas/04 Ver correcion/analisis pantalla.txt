@@ -1,0 +1,27 @@
+nombre del cuestionario
+pregunta
+la respuesta del usuario
+E indicar con msj en rojo  "¡Respuesta errónea!", ¡Respuesta correcta!"
+
+Ejemplo 
+JavaScript completo 
+Pregunta 1
+¿sdsd dsadsad sdasdsa?
+Tu respuesta: dsadsaddsdsadsad dsadsaddsdsadsad dsadsaddsdsadsad
+¡Respuesta errónea!
+
+es similar al de ConsultasController, ObtenerPreguntaPorCuestionario... 
+se comunicara con el que trae las respuestas correctas .. de la capa de acceso :ResultadosAD, ObtenerRespuestasCorrectas 
+
+este meteodo retorna un objeto ConsultasController, ObtenerPreguntaPorCuestionario
+este metodo  ObtenerCorreccionPreguntas  tendra de parametro el objeto retornado por ObtenerPreguntaPorCuestionario
+
+ public async Task<RespuestaResponseVM<List<PreguntaConRespuestaVerCorrecionVM>>> ObtenerCorreccionPreguntas
+ (ListContestadasVerCorrecionVM listContestadasVerCorrecionVM){
+
+ }
+
+ idcuestionario
+ idpregunta
+ idrespuesta
+

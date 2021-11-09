@@ -1,0 +1,67 @@
+1 listado examenes
+en esta pantalla solo se mostraran los cuestionarios que esten activos
+
+2a presentar examen
+Analisis de pantalla
+concepto, validaciones, actividad
+
+concepto 
+Recibe el idcuesstionario, nombre cuestionario busca las preguntas que 
+le corresponde junto con su respuesta y las devuelve
+
+
+campos de bd : prefijo, respuesta,NumeroPegunta, NombreCuestionario
+
+prefijo+" "+respuesta ejemplo: 
+a) soy una pregunta
+
+"Pregunta "+NumeroPegunta+":"  ejemplo: 
+Pregunta 1: 
+
+NombreCuestionario
+
+Validaciones: verifica que se envie idcuestionario, nombre cuestionario, verifica que existan preguntas para cada cuestionario
+
+Actividad : 
+Buscar las preguntas y las respuestas del cuestionario, devolverlas en lista
+
+  "idCuestionario": 1,
+  "nombreCuestionario": "Javascrip Completo"
+
+Pantalla "Corregir Examen"
+	para esta pantalla necesitamos que se nos mande un objeto, de js donde haya sido guardadas 
+	las respuestas contestadas, este objeto tambien sera guardado en un archivo para ser serializado.
+
+
+"idCuestionario": 1
+"idPregunta": 1,
+"idRespuesta": 3
+
+"idPregunta": 2,
+idRespuesta": 5
+
+"idPregunta": 4,
+"idRespuesta": 11,
+
+
+"idCuestionario": 2,
+"idPregunta": 5,
+"idRespuesta": 16
+
+
+"idPregunta": 6,
+"idRespuesta": 20
+
+"idPregunta": 7,
+"idRespuesta": 22
+
+
+
+
+
+
+
+
+
+
+ 

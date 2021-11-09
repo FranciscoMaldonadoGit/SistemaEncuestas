@@ -1,0 +1,78 @@
+_displayItems
+
+ejemplo de planeacion de funcionamiento 
+
+        // <!-- objeto preguntas  -->
+        // <!-- contruir elemento texto con el texto Pregunta n -->
+        // <!-- contruir elemento h2 -->
+        // <!-- agregar clase  HeadNombrePregExamen al elemento h2 -->
+        // <!-- agregar como hijo a h2, elemento texto con el texto Pregunta n -->
+        
+        // <!-- crear elemento ul-->
+        // <!-- objeto respuestas -->
+        // <!-- contruir elementos radio, con texto de la respuesta , si es pregunta construir solo el texto -->
+        // <!-- contruir elementos li -->
+        // <!-- agregar como hijo a li, los elementos radio y respuesta o pregunta  -->
+        // <!-- agregar elementos li, como hijo de ul -->
+
+        // <!-- crear elemento section -->
+        // <!-- agregar a contPrincipal, elemento section como hijo -->
+
+        // <!-- agregar h2 como hijo del section  -->
+
+        planear este codigo
+                
+        let  idPregunta= este.target.getAttribute("data-idPregunta"); 
+        let  idRespuesta= este.target.getAttribute("data-idRespuesta"); 
+        
+        if(objEnvio.lContestadasVM.some( x => x.idPregunta == idPregunta)){ 
+
+                //aqui se da por hecho que la pregunta existe dentro del arreglo
+                // x.idPregunta == idPregunta solo se usa , para buscar
+                // x.idRespuesta != idRespuesta para comparar, si no es igual la remplaza
+                let BuscaReplazlContestadasVM = objEnvio.lContestadasVM
+                .map( (x) => {
+                //se busca que respuesta tiene, si la respuesta no es la misma se remplza
+                if(x.idPregunta == idPregunta && x.idRespuesta != idRespuesta){
+                        x.idRespuesta = idRespuesta
+                }
+                return x;
+                })
+
+                objEnvio.lContestadasVM = [...BuscaReplazlContestadasVM]
+
+        }else{
+                const objtPreguntaRespuest = { "idPregunta":  idPregunta,"idRespuesta": idRespuesta }
+                objEnvio.lContestadasVM.push(objtPreguntaRespuest);
+        }
+
+
+        //añadir solo solo una vez la pregunta
+        ejemplo 4 preguntas con 4 opciones cada un: 
+        pregunta 1   idrespuesta 1
+        pregunta 2   idrespuesta 6
+        pregunta 3   idrespuesta 11
+        pregunta 4   idrespuesta 13
+
+        //si el usuario agrega una pregunta,se sustituye : agregar pregunta 4   idrespuesta 14
+        pregunta 1   idrespuesta 1
+        pregunta 2   idrespuesta 6
+        pregunta 3   idrespuesta 11
+        pregunta 4   idrespuesta 13 //se busca
+
+        pregunta 1   idrespuesta 1
+        pregunta 2   idrespuesta 6
+        pregunta 3   idrespuesta 11
+        pregunta 4   idrespuesta 14 //se  remplza la respuesta
+
+        verificar si existe al pregunta agregada (PregNueva)
+        SI
+                se verifica que exista la respuesta (resNueva) (existerespuesta)
+                //caso1 
+                SI
+                        ;
+                NO
+                        se agrega con su pregunta (PregNueva) y respuesta (resNueva) --- se busca la pregunta y se le remplaza la respuesta
+                        
+        NO
+                se agrega con su pregunta (PregNueva) y respuesta (resNueva) 

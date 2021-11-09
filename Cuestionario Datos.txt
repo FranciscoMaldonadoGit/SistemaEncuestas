@@ -1,0 +1,117 @@
+JavaScript completo 
+
+En JavaScript, ¿cuál es la forma correcta de crear un array?
+ a) var txt = new Array:1=("tim"),2=("kim"),3=("jim")
+
+ b) var txt = new Array(1="tim",2="kim",3="jim")
+
+ c) var txt = new Array("tim","kim","jim")
+
+ d) var txt = new Array(1:"tim",2:"kim",3:"jim")
+
+Respuesta correcta : c)
+
+
+ En JavaScript, ¿cómo se muestra una ventana con el mensaje "Hola mundo!"? 
+
+ a) alert("Hola mundo!");
+
+ b) alertBox = "Hola mundo!";
+
+ c) alertBox("Hola mundo!);
+
+ d) msgBox("Hola mundo!); 
+
+Respuesta correcta : a)
+
+ JavaScript fue diseñado por
+
+ a) Bill Gates
+
+ b) Bjarne Stroustrup
+
+ c) Brendan Eich
+
+ d) Dennis M. Ritchie
+
+Respuesta correcta :  c) Brendan Eich
+
+ En JavaScript, el operador para concatenar cadenas es
+
+ a) "&"
+
+ b) "+"
+
+ c) "."
+
+ d) Las anteriores respuestas no son correctas
+
+Respuesta correcta : b) "+"
+
+
+ HTML completo
+ Pregunta 1:
+La etiqueta <blockquote> se emplea para definir
+
+ a) Un bloque de código
+
+ b) Un formulario de búsqueda
+
+ c) Un párrafo
+
+ d) Una cita
+
+Respuesta correcta : d) Una cita
+
+Pregunta 2:
+¿Qué etiqueta de HTML se emplea para definir una hoja de estilo interna?
+
+ a) <css>
+
+ b) <link>
+
+ c) <script>
+
+ d) <style>
+
+Respuesta correcta :  d) <style>
+
+Pregunta 3:
+En HTML, el atributo longdesc se emplea para
+
+ a) Proporcionar el texto de una descripción más larga que la definida con el atributo alt
+
+ b) Indicar la URL de una página web donde se proporcina una descripción larga de la imagen
+
+ c) Indicar la URL de una imagen que complementa el texto de un párrafo
+
+ d) Las anteriores respuestas no son correctas
+
+Respuesta correcta :  b) Indicar la URL de una página web donde se proporcina una descripción larga de la imagen
+
+
+Pregunta 4:
+En HTML, para indicar el orden de tabulación entre los controles de un formulario se emplea
+
+ a) El atributo tab
+
+ b) El atributo tabindex
+
+ c) El atributo alt
+
+ d) No se puede
+
+Respuesta correcta :  b) El atributo tabindex
+
+Pregunta 5:
+Identifica la función de la etiqueta de HTML <noscript>
+
+ a) La etiqueta <noscript> se emplea para definir un contenido que resume la funcionalidad de un script: este contenido se muestra sólo si el navegador no soporta scripting
+
+ b) La etiqueta <noscript> desactiva en el navegador la capacidad de ejecutar un script
+
+ c) La etiqueta <noscript> puede ser utilizada por los diseñadores para indicar que una página web emplea scripting: si se utiliza <noscript>, el navegador procesará la página web más eficientemente
+
+ d) Todas las respuestas son correctas
+
+Respuesta correcta :   a)

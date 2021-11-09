@@ -1,0 +1,16 @@
+> Abrir powershell
+ verificar version de sdk
+ PS C:\Users\Luz Maldonado> dotnet --v  (ver version)
+ PS C:\Users\Luz Maldonado> dotnet --help  (ver comandos)
+ PS C:\Users\Luz Maldonado> dotnet new --list  (ver lista de comandos para crear apps )
+ PS C:\Users\Luz Maldonado> cd "C:\Users\Luz Maldonado\Desktop\F Maldonado\Proyectos\ProyectoPruebaWebApi5"
+
+Crear web api, desde el dotnet cli 
+PS C:\Users\Luz Maldonado\Desktop\F Maldonado\Proyectos\ProyectoPruebaWebApi5> dotnet new sln
+PS C:\Users\Luz Maldonado\Desktop\F Maldonado\Proyectos\ProyectoPruebaWebApi5> dotnet new webapi
+PS C:\Users\Luz Maldonado\Desktop\F Maldonado\Proyectos\ProyectoPruebaWebApi5> dotnet sln add ProyectoPruebaWebApi5.csproj
+
+Realizar una publicacion del app antes creada
+PS C:\Users\Luz Maldonado\Desktop\F Maldonado\Proyectos\ProyectoPruebaWebApi5> dotnet publish --self-contained -c Release -r win-x64
+
+

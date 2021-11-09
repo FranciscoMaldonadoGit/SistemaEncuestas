@@ -1,0 +1,50 @@
+
+1.- Cuestionarios
+	IdCuestionario     int                 not null
+	NombreExamen       nvarchar( 500)      not null
+	NoPreguntas        int                 not null
+    FechaAlta          datetime            null
+    FechaModificacion  datetime            null
+
+2.- Preguntas                                         
+	IdPregunta   int                   not null
+	IdCuestionario       int FK        not null
+	NoPregunta   int                   not null
+	Pregunta     nvarchar(500)         not null
+    FechaAlta          datetime        null
+    FechaModificacion  datetime        null
+
+3.- Respuestas
+     IdRespuesta  int                   not null
+     IdPregunta   int                   not null
+     IdPrefijoCatalogo    nvarchar(10)  not null
+     Respuesta    nvarchar( 500 )       not null
+     esRespuestCorrecta bool            not null
+     FechaAlta          datetime        null
+     FechaModificacion  datetime        null
+
+
+ 5  Catalogos  ( estan prefijos de las preguntas  y mensajes,cuando hay respuesta correcta )
+    NombreCatalogos    nvarchar( 500 )      not null
+    ClaveCatalogo     nvarchar( 10 )        not null
+    FechaAlta          datetime             null
+    FechaModificacion  datetime             null
+
+    ejemplos de prefijo a), b), c), d), e)
+
+ 6.-Resultados   
+    NumContestadas    int           not null
+    NumAciertos      	   int      not null
+    PorcentajeAciertos  int         not null
+    NumFallos     	   int          not null
+    NoContestadas  int              not null
+    TiempoExamen   time             not null
+    FechaAlta          datetime     null
+    FechaModificacion  datetime     null
+
+
+
+
+
+
+

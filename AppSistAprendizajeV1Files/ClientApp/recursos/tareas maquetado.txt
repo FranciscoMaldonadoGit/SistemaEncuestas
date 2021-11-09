@@ -1,0 +1,1 @@
+quitar el estilo a las listas, quitar el estilo azul de los ancore 

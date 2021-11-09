@@ -1,0 +1,49 @@
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-5.0&tabs=visual-studio
+
+**** Si se instala desde el proyecto principal
+instalar el paquete nuget
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+Crear carpeta Models, donde se crearon los pquetes anteriores 
+
+Administrador de paquetes  ruta: Herraminentas -> Administrador de paquetes -> Consola del Administrador de paquetes
+verificar que en la ventana este seleccionado el proyecto donde se intstalo ef
+
+en consola ponemos el siguiente comando
+PM > Scaffold-DbContext "Server=localhost; Database=SistAprendizaje; Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+**** Si se instala desde biblioteca de clases
+Crear web api
+instalar el paquete nuget proyecto principal (que debe hacer referencia ala biblioteca de clases)
+Microsoft.EntityFrameworkCore.Design
+
+Agregar biblioteca de clases y referenciar desde el proyecto principal
+instalar el paquete nuget
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+Crear carpeta con el nombre "Models"
+
+Administrador de paquetes  ruta: Herraminentas -> Administrador de paquetes -> Consola del Administrador de paquetes
+verificar que en la ventana este seleccionado el proyecto donde se intstalo ef
+
+en consola ponemos el siguiente comando
+PM > Scaffold-DbContext "Server=localhost; Database=SistAprendizaje; Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+se generan modelos y context, en la carpeta Models, ahora llamamos a la tabla desde el controlador
+ [HttpGet]
+        public string  Get()
+        {
+            string lista = ""; 
+            using (var context = new SistAprendizajeContext())
+            {
+                foreach (var Cuestionario in  context.Cuestionarios.ToList())
+                {
+                    lista += Cuestionario.NombreCuestionario +" \n";
+                }
+             }
+
+            return lista;
+        }

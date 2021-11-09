@@ -1,0 +1,29 @@
+Crear una llave foranea
+
+Diseñador 
+Uso de SQL Server Management Studio
+En el Explorador de objetos, haga clic con el botón derecho en la tabla que va a estar en el lado de la clave externa de la relación y, después, haga clic en Diseño.
+La tabla se abre en el Diseñador de tablas.
+En el menú Diseñador de tablas , haga clic en Relaciones.
+En el cuadro de diálogo Relaciones de clave externa , haga clic en Agregar.
+La relación aparece en la lista Relación seleccionada con un nombre proporcionado por el sistema con el formato FK_<tablename><tablename>, donde tablename es el nombre de la tabla de clave externa.
+Haga clic en la relación en la lista Relación seleccionada .
+Haga clic en Especificaciones de tablas y columnas en la cuadrícula situada a la derecha y, después, haga clic en los puntos suspensivos ( ... ) situados a la derecha de la propiedad.
+En el cuadro de diálogo Tablas y columnas , en la lista desplegable Clave principal , elija la tabla que estará en el lado de la clave principal de la relación.
+En la cuadrícula situada debajo, elija las columnas que contribuyen a la clave principal de la tabla. En la celda de la cuadrícula adyacente situada a la izquierda de cada columna, elija la columna de clave externa correspondiente de la tabla de clave externa.
+ElDiseñador de tablas sugerirá un nombre para la relación. Para cambiar este nombre, edite el contenido del cuadro de texto Nombre de la relación .
+Elija Aceptar para crear la relación.
+
+
+T-SQL
+--Crear las restricciones
+ALTER TABLE [dbo].[Persona]  
+WITH CHECK ADD  CONSTRAINT [FK_Persona_Estaus]  --- agregar constraint
+FOREIGN KEY([IdEstatus])
+REFERENCES [dbo].[Estatus] ([IdEstatus])
+GO
+
+ALTER TABLE [dbo].[Persona] CHECK CONSTRAINT [FK_Persona_Estaus]  -- habilitar  constraint
+GO
+
+       

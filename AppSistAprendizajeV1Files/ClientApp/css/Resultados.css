@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.textoError {
+    color:red;
+    font-weight: bold;
+}
+
+.HeadNombreExamen{
+    display: block;
+    text-align: left;
+    background-color:cornflowerblue;
+    margin: 10px 10px  50px 10px;
+}
+
+.contPrincipal{
+    display: block;
+    margin: 0px 10px  40px 10px;
+}
+
+ 
+/*todos los hijos de la lista, pero el ultimo no */
+.listaRes  li:not(:last-child){
+      padding-bottom:  10px;
+}
+
+/* main  section:not(:last-child){
+    padding-bottom:  25px;
+} */
+
+/* .listaRes  li  input[type="radio"]{
+    margin-right: 15px;
+} */
+
+.footerResultado{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    background-color:cornflowerblue;
+    margin: 10px 10px  50px 10px;
+}
+
+.btnFoter{
+      margin: 10px 10px 10px 0px;
+      padding: 5px;
+}

@@ -1,0 +1,19 @@
+Pasos instalacion iis, web api .net 5
+
+*verificar que el appsettings.Development y appsettings, sean iguales
+
+*verificar que swagger este fuera del entorno de desarrollo
+
+*se genero doble publish : con el comando para vs code
+dotnet publish --self-contained -c Release -r win-x64
+
+https://social.msdn.microsoft.com/Forums/es-ES/c54d8a35-23cc-4961-8a53-7c61f49c0a4f/login-failed-for-user-iis-apppooldefaultapppool?forum=netfxwebes
+se soluciona agregando las credenciales del usuario: credencial de usuario admin.png
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+5 consejos al diseñar base de datos
+1.- no olvidar los constraints, fk, permitir nulos, primary key, valores unicos
+
+2.- verificar el tipo de dato, por los campos
+
+3.- Usar indices, para que la busqueda en la tabla sea mas rapida
+    usar indices,cuando haya busquedas muy recurrentes 
+
+4.- hacer diccionario de datos
+
+

@@ -1,0 +1,6 @@
+error al realizar la publicacion del web api 
+La operación de publicación detectó un error.
+Error de compilación. Compruebe la ventana de salida para obtener más detalles.
+
+Se ha creado un registro de diagnóstico en la siguiente ubicación:
+"C:\Users\maldo\AppData\Local\Temp\tmp8914.tmp"
